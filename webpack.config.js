@@ -15,7 +15,23 @@ module.exports = {
 
   devServer: {
     contentBase: outputPath,
-    historyApiFallback: true
+    historyApiFallback: true,
+    stats: {
+      colors: true,
+      hash: false,
+      version: false,
+      timings: true,
+      assets: true,
+      chunks: false,
+      modules: false,
+      reasons: false,
+      children: false,
+      source: false,
+      errors: true,
+      errorDetails: true,
+      warnings: false,
+      publicPath: false,
+    },
   },
 
   module: {
@@ -43,8 +59,8 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, 'build/index.html'),
-      template: path.resolve(__dirname, 'src/index.html')
+      filename: './index.html',
+      template: path.resolve(__dirname, 'src', 'index.html')
     })
   ]
 }

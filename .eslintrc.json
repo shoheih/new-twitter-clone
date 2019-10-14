@@ -30,7 +30,7 @@
     ],
     "yoda": 0,
     "no-unused-vars": 1,
-    "no-console": "error"
+    "no-console": "warn"
   },
   "globals": {
     "$": false
