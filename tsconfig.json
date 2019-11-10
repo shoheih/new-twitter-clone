@@ -13,12 +13,17 @@
     "strict": true,
     "alwaysStrict": true,
     "strictNullChecks": false,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "baseUrl": "src",
+    "incremental": true
   },
   "include": [
     "./src/"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "build",
+    "scripts",
+    "functions"
   ]
 }
